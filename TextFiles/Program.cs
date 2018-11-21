@@ -29,6 +29,7 @@ namespace TextFiles
                 stream.Dispose();
             }
 
+
             // open file for writing and append one line of text
             using (Stream str = new FileStream("test.txt", FileMode.Append, FileAccess.Write))
             using (TextWriter wr = new StreamWriter(str))

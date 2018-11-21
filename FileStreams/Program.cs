@@ -12,7 +12,7 @@ namespace FileStreams
         static void Main(string[] args)
         {
             // open or create a file and write 7 bytes to it
-            byte[] outBuffer = new byte[] { 1, 2, 3, 4, 5, 6, 7 };
+            byte[] outBuffer = new byte[] { (byte)'a', 1, 2, 3, 4, 5, 6, 7 };
             using (FileStream stream = new FileStream("test.bin", FileMode.OpenOrCreate))
             {
                 Console.WriteLine("Writing buffer to file...");
