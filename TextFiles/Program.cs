@@ -22,11 +22,12 @@ namespace TextFiles
                 // in case there are any exceptions we must guarantee 
                 // that the writer and the streams are closed and disposed
 
-                writer.Close();
-                writer.Dispose();
 
-                stream.Close();
-                stream.Dispose();
+                writer?.Close();
+                writer?.Dispose();
+
+                stream?.Close();
+                stream?.Dispose();
             }
 
 
